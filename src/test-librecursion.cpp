@@ -174,7 +174,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
  * 5. Iterate your solution by making small implementations to pass
  *    tests 1 or 2 at a time until you are passing all of the tests.
  */
-/* Uncomment Task 1 test case to begin working on it.
+//* Uncomment Task 1 test case to begin working on it.
    TEST_CASE("<sumIterative> function tests",
     "[task1]")
    {
@@ -223,7 +223,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    // check bounds checking is working
    CHECK_THROWS_AS( sumIterative(l4, -1, 5), ListMemoryBoundsException);
    }
- */
+// */
 
 /** Task 2: implement a recursive version of summing an array of
  * integer values.  Notice all results of recursion should get the

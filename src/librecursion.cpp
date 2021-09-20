@@ -2,11 +2,11 @@
  * @brief Recursive function implementations for Assignment Recursion:
  *   Writing and Understanding Recursive Functions
  *
- * @author Jane Programmer
- * @note   class: COSC 2336, Summer 2021
+ * @author Michael Beaty
+ * @note   class: COSC 2336, Fall 2021
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Recursion
- * @date   June 1, 2021
+ * @date   9/24/21
  *
  * Implement several functions using both iteration and recursion.
  * For more practice with using basic C/C++ arrays, we will
@@ -26,3 +26,28 @@
 // assignments, including giving a name, short description, and
 // documenting parameters and return value using @param and @returns
 // tags respectively.
+
+/** Add a range
+ *  This function takes in a List object and adds the indexes
+ *  from the start index to the end index
+ *
+ *  @param listIn inputted list that has values summed together and returned.
+ *
+ *  @param start int value for the starting index of the summation
+ *
+ *  @param end int value for the ending index of the summation. This value
+ *   is included in the summation.
+ *
+ *  @returns int value of summation from start to end indexes
+ */
+int sumIterative(List& listIn, int start, int end)
+{
+  int sum = 0;
+
+  for (int index = start; index <= end; index++)
+  {
+    sum += listIn[index];
+  }
+
+  return sum;
+}
