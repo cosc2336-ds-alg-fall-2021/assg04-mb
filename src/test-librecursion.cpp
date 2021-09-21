@@ -475,7 +475,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
  * tests again and expect the same results, because both iterative or
  * recursive solutions should give the same answer for these tests.
  */
-/* Uncomment Task 6 test case to begin working on it.
+//* Uncomment Task 6 test case to begin working on it.
    TEST_CASE("<isPalindromeRecursive> function tests",
     "[task6]")
    {
@@ -546,4 +546,4 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    List l7(5, values7);
    CHECK_FALSE(isPalindromeRecursive(l7, 0, 4));
    }
- */
+ //*/

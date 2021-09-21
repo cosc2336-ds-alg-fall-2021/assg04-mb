@@ -159,3 +159,35 @@ bool isPalindromeIterative(List& listIn, int start, int end)
 
   return true;
 }
+
+/** recursively checks if given List is a palindrome
+ * This functions checks to see if the given range of a the List's
+ * values is a palindrome.
+ *
+ * @param listIn list to be checked
+ *
+ * @param start index value for the start of the check
+ *
+ * @param end index value for the end of the check. this value
+ *  will be included in the check.
+ *
+ * @returns boolean value of if the given List's range is a palindrome
+ */
+bool isPalindromeRecursive(List& listIn, int start, int end)
+{
+  if(start < end)
+  {
+    if (listIn[start] == listIn[end])
+    {
+      return isPalindromeRecursive(listIn, start + 1, end - 1);
+    }
+    else
+    {
+      return false;
+    }
+  }
+  else
+  {
+    return true;
+  }
+}
