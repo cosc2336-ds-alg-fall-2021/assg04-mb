@@ -283,7 +283,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
 /** Task 3: implement an iterative version of reversing the elements
  * of a List.
  */
-/* Uncomment Task 3 test case to begin working on it.
+//* Uncomment Task 3 test case to begin working on it.
    TEST_CASE("<reverseIterative> function tests",
     "[task3]")
    {
@@ -334,7 +334,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    CHECK_THROWS_AS( reverseIterative(l5, -1, 5), ListMemoryBoundsException);
    CHECK_THROWS_AS( reverseIterative(l5, 0, 10), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 4: implement a recursive version of reversing the elements
  * of a List.  Notice that all tests are the same as the iterative

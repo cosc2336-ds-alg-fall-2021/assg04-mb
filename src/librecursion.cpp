@@ -76,3 +76,29 @@ int sumRecursive(List& listIn, int start, int end)
     return 0;
   }
 }
+
+/** flips the List within an given range iteratively
+ * This function will take in a List and swap the locations of the values
+ * within a given range. i.e. swapping start with end then start + 1 
+ * with end - 1 ect.
+ *
+ * @param listIn a List object passed in by reference
+ *
+ * @param start starting index of the range of values to be swapped
+ *
+ * @param end ending index of the range to be swapped. this loaction
+ *  is included for swapping.
+ */
+void reverseIterative(List& listIn, int start, int end)
+{
+  int temp = 0;
+
+  for (int index = start; index < end; index++)
+  {
+    temp = listIn[end];
+    listIn[end] = listIn[index];
+    listIn[index] = temp;
+
+    end--;
+  }
+}
