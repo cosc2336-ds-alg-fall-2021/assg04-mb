@@ -130,3 +130,32 @@ void reverseRecursive(List& listIn, int start, int end)
   listIn[start] = listIn[end];
   listIn[end] = temp;
 }
+
+/** iteratively checks if given List is a palindrome
+ * This functions checks to see if the given range of a List's 
+ * values is a palindrome.
+ *
+ * @param listIn list to be checked
+ * 
+ * @param start index value for the start of the check
+ * 
+ * @param end index value for the end of the check. this value
+ *  will be included in the check.
+ *
+ * @returns boolean value of if the given List's range is a palindrome
+ */
+bool isPalindromeIterative(List& listIn, int start, int end)
+{
+  List* temp = new List(listIn);
+  reverseIterative(*temp, start, end);
+
+  for (int index = start; index < end; index++)
+  {
+    if (temp->operator[](index) != listIn[index])
+    {
+      return false;
+    }
+  }
+
+  return true;
+}

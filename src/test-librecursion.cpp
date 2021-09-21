@@ -397,7 +397,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
 /** Task 5: implement function to test if a list is a palindrome
  * by reusing one of your reverseX() functions.
  */
-/* Uncomment Task 5 test case to begin working on it.
+//* Uncomment Task 5 test case to begin working on it.
    TEST_CASE("<isPalindromeIterative> function tests",
     "[task5]")
    {
@@ -468,7 +468,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    List l7(5, values7);
    CHECK_FALSE(isPalindromeIterative(l7, 0, 4));
    }
- */
+ //*/
 
 /** Task 6: implement function to test if a list is a palindrome
  * using a recursive function.  Notice that we do exactly the same
