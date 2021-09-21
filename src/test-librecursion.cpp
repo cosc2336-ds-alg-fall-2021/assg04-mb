@@ -341,7 +341,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
  * implementation, both should give the same result for reversing the
  * sublist of values.
  */
-/* Uncomment Task 4 test case to begin working on it.
+//* Uncomment Task 4 test case to begin working on it.
    TEST_CASE("<reverseRecursive> function tests",
     "[task4]")
    {
@@ -392,7 +392,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    CHECK_THROWS_AS( reverseRecursive(l5, -1, 5), ListMemoryBoundsException);
    CHECK_THROWS_AS( reverseRecursive(l5, 0, 10), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 5: implement function to test if a list is a palindrome
  * by reusing one of your reverseX() functions.

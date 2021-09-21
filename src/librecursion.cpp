@@ -102,3 +102,31 @@ void reverseIterative(List& listIn, int start, int end)
     end--;
   }
 }
+
+/** flips the List within an given range recuseively
+ * This function will take in a List and swap the locations of the values
+ * within a given range. i.e. swapping start with end then start + 1
+ * with end - 1 ect.
+ *
+ * @param listIn a List object passed in by reference
+ *
+ * @param start starting index of the range of values to be swapped
+ *
+ * @param end ending index of the range to be swapped. this loaction
+ *  is included for swapping.
+ */
+void reverseRecursive(List& listIn, int start, int end)
+{
+  if(start < end)
+  {
+    reverseRecursive(listIn, start + 1, end - 1);
+  }
+  else
+  {
+    return;
+  }
+  
+  int temp = listIn[start];
+  listIn[start] = listIn[end];
+  listIn[end] = temp;
+}

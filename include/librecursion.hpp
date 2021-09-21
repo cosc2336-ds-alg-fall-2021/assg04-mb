@@ -36,5 +36,6 @@ using namespace std;
 int sumIterative(List& listIn, int start, int end);
 int sumRecursive(List& listIn, int start, int end);
 void reverseIterative(List& listIn, int first, int last);
+void reverseRecursive(List& listIn, int start, int end);
 
 #endif // _LIBRECURSION_HPP_
