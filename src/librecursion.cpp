@@ -27,7 +27,7 @@
 // documenting parameters and return value using @param and @returns
 // tags respectively.
 
-/** Add a range
+/** Add a range in a List iteratively
  *  This function takes in a List object and adds the indexes
  *  from the start index to the end index
  *
@@ -36,7 +36,7 @@
  *  @param start int value for the starting index of the summation
  *
  *  @param end int value for the ending index of the summation. This value
- *   is included in the summation.
+ *   is included in the summation. end must be greater than start.
  *
  *  @returns int value of summation from start to end indexes
  */
@@ -50,4 +50,29 @@ int sumIterative(List& listIn, int start, int end)
   }
 
   return sum;
+}
+
+/** Add a range in a List recursively
+ *  This function takes in a List object and adds the indexes
+ *  from the start index to the end index
+ *
+ *  @param listIn inputted list that has values summed together and returned.
+ *
+ *  @param start int value for the starting index of the summation
+ *
+ *  @param end int value for the ending index of the summation. This value
+ *   is included in the summation. end must be greater than start.
+ *
+ *  @returns int value of summation from start to end indexes
+ */
+int sumRecursive(List& listIn, int start, int end)
+{
+  if (start <= end)
+  {
+    return listIn[start] + sumRecursive(listIn, start + 1, end);
+  }
+  else
+  {
+    return 0;
+  }
 }

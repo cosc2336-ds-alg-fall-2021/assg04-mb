@@ -34,5 +34,6 @@ using namespace std;
 // source implementation file.
 
 int sumIterative(List& listIn, int start, int end);
+int sumRecursive(List& listIn, int start, int end);
 
 #endif // _LIBRECURSION_HPP_

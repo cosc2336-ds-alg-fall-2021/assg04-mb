@@ -229,7 +229,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
  * integer values.  Notice all results of recursion should get the
  * same result as the iterative approach.
  */
-/* Uncomment Task 2 test case to begin working on it.
+//* Uncomment Task 2 test case to begin working on it.
    TEST_CASE("<sumRecusrive> function tests",
     "[task2]")
    {
@@ -278,7 +278,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    // check bounds checking is working
    CHECK_THROWS_AS( sumRecursive(l4, -1, 5), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 3: implement an iterative version of reversing the elements
  * of a List.
