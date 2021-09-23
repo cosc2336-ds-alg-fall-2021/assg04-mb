@@ -146,12 +146,12 @@ void reverseRecursive(List& listIn, int start, int end)
  */
 bool isPalindromeIterative(List& listIn, int start, int end)
 {
-  List* temp = new List(listIn);
-  reverseIterative(*temp, start, end);
+  List temp = List(listIn);
+  reverseIterative(temp, start, end);
 
   for (int index = start; index < end; index++)
   {
-    if (temp->operator[](index) != listIn[index])
+    if (temp[index] != listIn[index])
     {
       return false;
     }
