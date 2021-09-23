@@ -37,7 +37,7 @@ int sumIterative(List& listIn, int start, int end);
 int sumRecursive(List& listIn, int start, int end);
 void reverseIterative(List& listIn, int first, int last);
 void reverseRecursive(List& listIn, int start, int end);
-bool isPalindromeIterative(List& listIn, int start, int end);
+bool isPalindromeIterative(const List& listIn, int start, int end);
 bool isPalindromeRecursive(List& listIn, int start, int end);
 
 #endif // _LIBRECURSION_HPP_

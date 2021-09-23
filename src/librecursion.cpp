@@ -144,20 +144,12 @@ void reverseRecursive(List& listIn, int start, int end)
  *
  * @returns boolean value of if the given List's range is a palindrome
  */
-bool isPalindromeIterative(List& listIn, int start, int end)
+bool isPalindromeIterative(const List& listIn, int start, int end)
 {
   List temp = List(listIn);
   reverseIterative(temp, start, end);
 
-  for (int index = start; index < end; index++)
-  {
-    if (temp[index] != listIn[index])
-    {
-      return false;
-    }
-  }
-
-  return true;
+  return listIn == temp;
 }
 
 /** recursively checks if given List is a palindrome
