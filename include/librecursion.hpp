@@ -2,11 +2,11 @@
  * @brief Header file for Assignment Recursion: Writing and Understanding
  *   Recursive Functions
  *
- * @author Jane Programmer
- * @note   class: COSC 2336, Summer 2021
+ * @author Michael Beaty
+ * @note   class: COSC 2336, Fall 2021
  * @note   ide  : VSCode Server 3.9.3, Gnu Development Tools
  * @note   assg : Assignment Recursion
- * @date   June 1, 2021
+ * @date   9/24/21
  *
  * Implement several functions using both iteration and recursion.
  * For more practice with using basic C/C++ arrays, we will
@@ -32,5 +32,12 @@ using namespace std;
 // you are to write for this assignment here.  The actual implementation
 // of your functions should be put into the corresponding [x.cpp]
 // source implementation file.
+
+int sumIterative(List& listIn, int start, int end);
+int sumRecursive(List& listIn, int start, int end);
+void reverseIterative(List& listIn, int first, int last);
+void reverseRecursive(List& listIn, int start, int end);
+bool isPalindromeIterative(const List& listIn, int start, int end);
+bool isPalindromeRecursive(List& listIn, int start, int end);
 
 #endif // _LIBRECURSION_HPP_

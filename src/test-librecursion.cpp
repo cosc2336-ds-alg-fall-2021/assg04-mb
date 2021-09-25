@@ -174,7 +174,7 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
  * 5. Iterate your solution by making small implementations to pass
  *    tests 1 or 2 at a time until you are passing all of the tests.
  */
-/* Uncomment Task 1 test case to begin working on it.
+//* Uncomment Task 1 test case to begin working on it.
    TEST_CASE("<sumIterative> function tests",
     "[task1]")
    {
@@ -223,13 +223,13 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    // check bounds checking is working
    CHECK_THROWS_AS( sumIterative(l4, -1, 5), ListMemoryBoundsException);
    }
- */
+// */
 
 /** Task 2: implement a recursive version of summing an array of
  * integer values.  Notice all results of recursion should get the
  * same result as the iterative approach.
  */
-/* Uncomment Task 2 test case to begin working on it.
+//* Uncomment Task 2 test case to begin working on it.
    TEST_CASE("<sumRecusrive> function tests",
     "[task2]")
    {
@@ -278,12 +278,12 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    // check bounds checking is working
    CHECK_THROWS_AS( sumRecursive(l4, -1, 5), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 3: implement an iterative version of reversing the elements
  * of a List.
  */
-/* Uncomment Task 3 test case to begin working on it.
+//* Uncomment Task 3 test case to begin working on it.
    TEST_CASE("<reverseIterative> function tests",
     "[task3]")
    {
@@ -334,14 +334,14 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    CHECK_THROWS_AS( reverseIterative(l5, -1, 5), ListMemoryBoundsException);
    CHECK_THROWS_AS( reverseIterative(l5, 0, 10), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 4: implement a recursive version of reversing the elements
  * of a List.  Notice that all tests are the same as the iterative
  * implementation, both should give the same result for reversing the
  * sublist of values.
  */
-/* Uncomment Task 4 test case to begin working on it.
+//* Uncomment Task 4 test case to begin working on it.
    TEST_CASE("<reverseRecursive> function tests",
     "[task4]")
    {
@@ -392,12 +392,12 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    CHECK_THROWS_AS( reverseRecursive(l5, -1, 5), ListMemoryBoundsException);
    CHECK_THROWS_AS( reverseRecursive(l5, 0, 10), ListMemoryBoundsException);
    }
- */
+ //*/
 
 /** Task 5: implement function to test if a list is a palindrome
  * by reusing one of your reverseX() functions.
  */
-/* Uncomment Task 5 test case to begin working on it.
+//* Uncomment Task 5 test case to begin working on it.
    TEST_CASE("<isPalindromeIterative> function tests",
     "[task5]")
    {
@@ -468,14 +468,14 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    List l7(5, values7);
    CHECK_FALSE(isPalindromeIterative(l7, 0, 4));
    }
- */
+ //*/
 
 /** Task 6: implement function to test if a list is a palindrome
  * using a recursive function.  Notice that we do exactly the same
  * tests again and expect the same results, because both iterative or
  * recursive solutions should give the same answer for these tests.
  */
-/* Uncomment Task 6 test case to begin working on it.
+//* Uncomment Task 6 test case to begin working on it.
    TEST_CASE("<isPalindromeRecursive> function tests",
     "[task6]")
    {
@@ -546,4 +546,4 @@ TEST_CASE("<List> test of List user defined type for this assignment", "[task0]"
    List l7(5, values7);
    CHECK_FALSE(isPalindromeRecursive(l7, 0, 4));
    }
- */
+ //*/
